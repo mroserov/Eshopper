@@ -1,0 +1,50 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Camiseta Polo",
+      "precio":"30000",
+      "descripcion":"Camiseta Polo Azul",
+      "categoria":1
+    },
+    {
+      "id": 2,
+      "name": "Camiseta Juvenil",
+      "precio":"20000",
+      "descripcion":"Camiseta Juvenil",
+      "categoria":1
+    },
+    {
+      "id": 3,
+      "name": "Vestido Dama",
+      "precio":"60000",
+      "descripcion":"Vestido dama negro",
+      "categoria":3
+    },
+    {
+      "id": 4,
+      "name": "Pantalon drill",
+      "precio":"70000",
+      "descripcion":"Pantalon drill hombre",
+      "categoria":2
+    }
+  ],
+  "category": [
+  	{
+      	"id": 1,
+    	"name": "Camisetas"
+  	},
+  	{
+      	"id": 2,
+    	"name": "Pantalones"
+  	},
+  	{
+      	"id": 3,
+    	"name": "Vestidos"
+  	},
+  	{
+      	"id": 4,
+    	"name": "Blusas"
+  	}
+  ]
+}
