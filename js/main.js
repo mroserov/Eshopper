@@ -31,13 +31,21 @@ $(document).ready(function(){
 
 
 app = {};
+app.userId=JSON.parse(localStorage.getItem("userId"));
 app.root = 'https://my-json-server.typicode.com/mroserov/Eshopper';
 function login(){
 	var username = document.getElementById("username");
 	$.ajax({
-	  url: app.root  + '/users?username='username.value,
+	  url: app.root  + '/users?username='+username.value,
 	  method: 'GET',jsonp: "callback",dataType: "jsonp",
 	}).then(function(data) {
 	  console.log(data);
+	  if (data.length > 0) {
+	  	alert("login ok");
+	  	localStorage.setItem("userId",JSON.stringify(data))
+	  	location.href="index.html";
+	  }else{
+	  	alert("usuario no existe");
+	  }
 	});
 }

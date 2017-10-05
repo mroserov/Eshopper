@@ -23,5 +23,5 @@ function showProductsByCategory(pCategoriId) {
 	alert("categoria"+pCategoriId);
 }
 
-app.userId="5";
+
 
