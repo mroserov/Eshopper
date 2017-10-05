@@ -45,6 +45,10 @@
   	{
       	"id": 4,
     	"name": "Blusas"
-  	}
+  	},
+    {
+        "id": 5,
+      "name": "Zapatos"
+    }
   ]
 }
