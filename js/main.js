@@ -28,3 +28,16 @@ $(document).ready(function(){
 		});
 	});
 });
+
+
+app = {};
+app.root = 'https://my-json-server.typicode.com/mroserov/Eshopper';
+function login(){
+	var username = document.getElementById("username");
+	$.ajax({
+	  url: app.root  + '/users?username='username.value,
+	  method: 'GET',jsonp: "callback",dataType: "jsonp",
+	}).then(function(data) {
+	  console.log(data);
+	});
+}
